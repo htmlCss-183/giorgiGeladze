@@ -1,0 +1,326 @@
+body {
+    background-color: #d8d8d8;
+}
+
+.head {
+    background: #4b4b4b;
+    color: rgb(212, 208, 208);
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-size: 26px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.head a {
+    padding-left: 15px;
+    padding-right: 15px;
+    /* border: 5px solid #4b4b4b; */
+}
+
+.head a:hover {
+    background: #000;
+    border: 15px solid black;
+    height: 20px;
+    color: white;
+}
+
+.main {
+    margin-top: 100px;
+}
+/* ------------------ */
+
+.left {
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    position: fixed;
+    top: 130px;
+    left: 5px;
+    font-size: 50px;
+}
+
+.left i {
+    padding-top: 15px;
+    /* border: 1px solid black; */
+    width: 70px;
+    padding-left: 20px;
+    
+}
+
+.left i:hover {
+    background-color: #000;
+}
+
+.left i:first-child {
+    background-color: #afccff;
+    width: 70px;
+}
+.left i:nth-child(2) {
+    background: #afccff;
+    width: 70px;
+}
+.left i:nth-child(3) {
+    background: rgb(255, 230, 254);
+    width: 70px;
+}
+.left i:nth-child(4) {
+    background: rgb(100, 101, 109);
+    width: 70px;
+}
+.left i:nth-child(5) {
+    background: #afccff;
+    width: 70px;
+}
+.left i:nth-child(6) {
+    background: rgb(255, 230, 254);
+    width: 70px;
+}
+
+
+.left i:hover {
+    background-color: #000;
+}
+
+.left i:first-child:hover {
+    background-color: #94bbff;
+    width: 100px;
+}
+.left i:nth-child(2):hover {
+    background: #9dc1ff;
+    width: 100px;
+}
+.left i:nth-child(3):hover {
+    background: rgb(255, 134, 251);
+    width: 100px;
+}
+.left i:nth-child(4):hover {
+    background: rgb(194, 194, 196);
+    width: 100px;
+}
+.left i:nth-child(5):hover {
+    background: #87b3ff;
+    width: 100px;
+}
+.left i:nth-child(6):hover {
+    background: rgb(216, 122, 122);
+    width: 100px;
+}
+
+.right p{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    padding-top: 50px;
+    font-size: 20px;
+}
+
+/* ---------------- */
+
+.table {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.table th {
+    width: 200px;
+    height: 50px;
+    text-align: center; 
+    background: #39984D;
+    color: whitesmoke;
+}
+
+.table th:hover {
+    background-color: rgb(11, 89, 2);
+}
+
+.table td {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background: white;
+}
+
+.table tr:hover {
+    color: rgb(34, 170, 34);
+    /* background-color: red; 
+    bgc არ მუშაობს, რატომ? */
+}
+
+#th1 {
+    border-top: 3px solid #feffff;
+    border-top-left-radius: 15px;
+    border-left:black solid 3px;
+}
+
+#th2 {
+    border-top: 3px solid #feffff;
+}
+
+#th3 {
+    border-top: 3px solid #feffff;
+    border-top-right-radius: 15px;
+    border-right:black solid 3px;
+}
+/* ================= */
+#a1 {
+    border-left:black solid 3px;
+}
+
+#b1 {
+    border-left:black solid 3px;
+}
+
+#c1 {
+    border-left:black solid 3px;
+}
+
+#d1 {
+    border-left:black solid 3px;
+}
+
+#e1 {
+    border-left:black solid 3px;
+    border-bottom: 3px solid green;
+    border-bottom-left-radius: 15px;
+}
+
+#e2 {
+    border-bottom: 3px solid green;
+}
+
+#a3 {
+    border-right:black solid 3px;
+}
+
+#b3 {
+    border-right:black solid 3px;
+}
+
+#c3 {
+    border-right:black solid 3px;
+}
+
+#d3 {
+    border-right:black solid 3px;
+}
+
+#e3 {
+    border-right:black solid 3px;
+    border-bottom: 3px solid green;
+    border-bottom-right-radius: 15px;
+}
+
+/* ----------------- */
+
+.comment {
+    margin-top: 300px;
+    display: flex;
+    margin-left: 150px;
+    margin-bottom: 200px;
+    border: 3px solid red;
+    padding: 20px;
+    border-radius: 30px;
+    width: 550px;
+}
+
+.leftt {
+    padding-top: 30px;
+    padding-right: 20px;
+}
+
+.leftt img {
+    width: 70px;
+    border-radius: 50px;
+}
+
+i {
+    padding-bottom: 10px;
+}
+
+#i1 {
+    width: 400px;
+    height: 200px;
+}
+
+#i2 {
+    width: 100px;
+    height: 40px;
+    background: rgb(133, 186, 53);
+    border-radius: 5px;
+    margin-right: 195px;
+    margin-top: 10px;
+}
+
+#i2:hover {
+    background: rgb(89, 131, 27);
+}
+
+#i3 {
+    width: 100px;
+    height: 40px;
+    background: rgb(201, 56, 56);
+    border-radius: 5px;
+}
+
+#i3:hover {
+    background: rgb(153, 27, 27);
+}
+
+
+.foot {
+    display: flex;
+    justify-content: space-evenly;
+    background: #4b4b4b;
+    color: rgb(212, 208, 208);    
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.foot h1 {
+    font-size: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.foot p {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.foot a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(212, 208, 208);
+}
+
+#k1 {
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+
+#k2 {
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    border: 2px solid rgb(212, 208, 208);
+    background-color: #4b4b4b;
+    color: rgb(212, 208, 208);
+}
+
+#k2:hover {
+    background: rgb(128, 108, 108);
+}
