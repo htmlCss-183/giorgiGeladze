@@ -1,0 +1,746 @@
+.navbar { grid-area: navbar; }
+.sidebar { grid-area: sidebar; }
+.main-content { grid-area: maincontent; }
+.movie-list-container1 { grid-area: movie1; }
+.movie-list-container2 { grid-area: movie2; }
+.movie-list-container3 { grid-area: movie3; }
+footer { grid-area: footer; }
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'navbar navbar'
+    'sidebar maincontent'
+    'sidebar movie1'
+    'sidebar movie2'
+    'sidebar movie3'
+    'footer footer';
+    /* grid-template-columns: 
+    35px 1fr; */
+    /* gap: 10px;
+    background-color: #2196F3;
+    padding: 10px; */
+    grid-template-columns: repeat(auto-fit, minmax(1fr));
+
+}
+
+.grid-container > div {
+    /* background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px; */
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    /* background-color: rgb(173, 173, 173); */
+    /* background-color: rgb(255, 255, 255); */
+    /* background-image: url("https://media.istockphoto.com/id/1444916714/photo/honeycomb-network-concept-data-transfer-digital-technological-background-3d-rendering.webp?b=1&s=170667a&w=0&k=20&c=skvnjJY14acClIsVhXuENCXvqcm_WsclMaJhSZzdOCU="); */
+    /* background-repeat: no-repeat; */
+}
+
+/*! responsive */
+/*! responsive */
+/*! responsive */
+/*! responsive */
+
+/* @media only screen and (min-width: 319px) and (max-width:767px) {
+    .slayd-wrapper {
+        width: 200px;
+        height: 100px;
+    }
+} */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .navbar-wrapper {
+        width:;
+        height: 30px;
+        font-size: 12px;
+    }
+    .navbar {
+        height: 30px;
+        width: 300px;
+    }
+    .navbar-wrapper img {
+        margin-left: 0;
+    }
+    .menu-container ul {
+        padding-left: 0;
+        gap: 15px;
+    }
+    .dropdown-content a {
+        margin-right: 20px;
+    }
+    .footer-container {
+        margin: 0;
+        padding: 0;
+    }
+    .footer-left {
+        margin-left: 10px;
+    }
+    .footer-middle {
+        padding: 0;
+    }
+    .footer-container p {
+        width: 200px;
+    }
+    /* .profile-listing ul li i {
+        display: inline-block;
+    } */
+}
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+    .navbar-wrapper {
+        width:;
+        height: 30px;
+        font-size: 13px;
+    }
+    .navbar {
+        height: 30px;
+        width: 300px;
+    }
+    .navbar-wrapper img {
+        margin-left: 0;
+    }
+    .menu-container ul {
+        padding-left: 0;
+        gap: 15px;
+    }
+    .menu-container ul:last-child {
+        margin-right: 20px;
+    }
+    .dropdown-content a {
+        margin-right: 20px;
+    }
+    .footer-container {
+        margin: 0;
+        padding: 0;
+    }
+    .footer-left {
+        margin-left: 10px;
+    }
+    .footer-middle {
+        padding: 0;
+    }
+    .footer-container p {
+        width: 200px;
+    }
+}
+@media only screen and (min-width: 1440px) {
+    body {
+        font-size: 100%;
+    }
+}
+
+/*! scrollball */
+/*! scrollball */
+/*! scrollball */
+/*! scrollball */
+
+html::-webkit-scrollbar {
+    width: 10px;
+    background-color: #fff;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgb(110, 110, 110);
+}
+
+/*! navbar */
+/*! navbar */
+/*! navbar */
+/*! navbar */
+
+.navbar {
+    height: 85px;
+    background-color: #021BA7;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 50px; /*  x და y */
+}
+
+.logo-wrapper {
+
+}
+
+/* .logo {
+-------------- ჰ1 ტექსტი დავაკომენტარეთ 
+} */
+
+.navbar-img {
+    width: 150px;
+    margin-top: 1px;
+}
+
+.menu-container .active,
+.menu-container a:hover  {
+    border-bottom: 2px solid transparent;
+    border-color: white;
+    border-radius: 5px;
+    padding-bottom: 5px;
+    transition: 0.5s;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;   /* სიის წერტილების დამალვა */
+    gap: 30px;  /* სიტყვებს შორის დაცილება */
+}
+
+.menu-list-item {
+
+}
+
+.menu-list-item-main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: azure;
+}
+
+.menu-list-item-main a:hover {
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+}
+
+.menu-list-item a {
+    text-decoration: none;
+    color: rgb(230, 226, 226);
+}
+
+.menu-list-item a:hover {
+    font-weight: bold;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+
+.profile-icon {
+    /* display: flex;
+    align-items: center; */
+    width: 5px;
+}
+
+.profile-icon a {
+}
+
+.profile-icon img {
+    width: 20px;
+    background: 0px solid white;
+    padding: 5px;
+    background: white;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.profile-listing {
+    display: flex;
+}
+
+.profile-list {
+    display: flex;
+    list-style: none;   /* სიის წერტილების დამალვა */
+    gap: 30px;  /* სიტყვებს შორის დაცილება */
+}
+
+.profile-list-item {
+    text-decoration: none;
+    color: rgb(230, 226, 226);
+}
+
+.profile-list a {
+    text-decoration: none;
+    color: rgb(230, 226, 226);
+}
+
+.profile-list-item a {
+    text-decoration: none;
+    font-weight: bold;
+    color: azure;
+}
+
+.profile-list-item a:hover {
+    font-weight: bold;
+    color: rgb(230, 226, 226);
+}
+
+.profile-list-item i {
+    display: none;
+    /* padding-top: 10px; */
+    /* margin-right: 5px; */
+}
+
+/*! drop-down */
+/*! drop-down */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    text-decoration: none;
+    font-weight: bold;
+    color: azure;
+    background-color: #021BA7;
+    /* color: white; */
+    padding: 12px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dropbtn:hover {
+    background-color: #2980b9;
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+    animation: transform 0.3s ease;
+}
+
+@keyframes transform {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #021BA7;
+}
+
+/*! sidebar */
+/*! sidebar */
+
+.sidebar {
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    row-gap: 30px; /* იკონები x წრფეზეა და ამიტომ row */
+    position: fixed; 
+    top: 85px;
+}
+
+.sidebar i {
+    color: white;
+    font-size: 20px;
+}
+
+.sidebar i:hover {
+    color: rgb(183, 184, 184);
+}
+
+/* !  slayd-content */
+/* !  slayd-content */
+
+.main-content {
+    position: relative;
+    /* top:185px;
+    left: 400px;  მაინც არ მოქმედებს */
+    z-index: 3;
+}
+
+.slayd-wrapper {
+    /* width: 97.4%; */
+    overflow: hidden;
+    border: 1px solid #323232;
+    position: absolute;
+    left: 35px;
+    top: 85px;
+    /* width: 1393px;                                                                    */
+    /* height: 590px; */
+}
+
+.slayd-gallery {
+    position: relative;
+    width: 400%;  /* სლაიდის 1/4-ის გამოსაჩენად */
+    left: 0;
+    animation: 60s slayd infinite;
+    animation-delay: 2s;
+    /* animation-timing-function: ease-in; */
+}
+
+.slayd-gallery img {
+    width: 25%; /* 100% ყველა ფოტო, 25% 1/4 */
+    float: left;
+}
+
+@keyframes slayd {
+    0% {
+        left: 0%;
+    }
+    20% {
+        left: 0%;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+}
+
+/*! slayd-text */
+/*! slayd-text */
+
+.slayd-text-wrapper {
+    position: absolute;
+    /* z-index: 2; */
+    top: 200px;
+    left: 150px;
+}
+
+.slayd-text-wrapper p {
+    font-size: x-large;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 2px 1px 1px black;
+    background: 1px solid rgba(145, 142, 142, 0.5);
+}
+
+.slayd-text-wrapper button {
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    column-gap: 10px;
+}
+
+.play-button {
+    background-color: rgba(255, 255, 255, 0.733);
+    color: black;
+}
+
+.play-button i {
+
+}
+
+.info-button {
+    background-color: rgba(145, 142, 142, 0.5);
+    color: white;
+}
+
+.info-button i {
+    padding-right: 5px;
+}
+
+/*! movie-list-container */
+/*! movie-list-container */
+
+.movie-list-container1 {
+    margin-left: 70px;
+    margin-top: 800px;
+    overflow: hidden;
+}
+
+.movie-list-container2 {
+    margin-left: 70px;
+    overflow: hidden;
+}
+
+.movie-list-container3 {
+    margin-left: 70px;
+    overflow: hidden;
+}
+
+.movie-list {
+    list-style: none;
+    padding: 0;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    transform: translateX(0);
+    transition: 1s all ease-in-out;
+}
+
+.movie-list-wrapper {
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.movie-list-title {
+    color: white;
+}
+
+.movie-item {
+    position: relative;
+}
+
+.movie-item:hover .movie-item-title {
+    opacity: 1;
+}
+
+.movie-item:hover .movie-item-button {
+    opacity: 1;
+}
+
+.movie-item:hover .movie-item-img {
+    transform: scale(1.2);
+    /* margin: 0 30px; ეს უბრალოდ ჩააჩოჩებს მარჯვნივ */
+    margin: 0 0px;
+    opacity: 0.6;
+}
+
+.movie-item-img {
+    width: 270px;
+    height: 180px;
+    transition: 1s all ease-in-out;
+    object-fit: cover;
+}
+
+.movie-item-title {
+    opacity: 0;
+    background-color: rgb(40, 40, 40, 0.4);
+    padding: 10px;
+    font-size: 28px;
+    font-family: bold;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    color: white;
+    transition: 1s all ease-in-out;
+}
+
+.movie-item-button {
+    background-color: rgb(40, 40, 40, 0.4);
+    padding: 0 10px;
+    font-family: bold;
+    position: absolute;
+    bottom: 10%;
+    left: 50px;
+    color: white;
+    display: flex;
+    column-gap: 20px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+
+.movie-item-button i {
+    cursor: pointer;
+    opacity: 0.7;
+    font-size: 20px;
+    transition: 0.5s all ease;
+}
+
+.movie-item-button i:hover {
+    opacity: 1;
+}
+/* ! click */
+/* ! click */
+/* ! click */
+/* ! click */
+/* ! click */
+
+#isari {
+    color: azure;
+    width: 100px;
+    display: flex;
+    font-size: 120px;
+    position: absolute;
+    right: 0;
+    top: 100px;
+    opacity: 0.5;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.fa-chevron-right:hover {
+    opacity: 1;
+}
+
+/* ! footer */
+/* ! footer */
+/* ! footer */
+/* ! footer */
+
+footer {
+    justify-content: center;
+    background-color: #021BA7;
+}
+
+.footer-container {
+    justify-content: center;
+    background-color: #021BA7;
+    height: 200px;
+}
+
+.footer-container h3 {
+    color: rgb(205, 205, 205);
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.footer-left a {
+    color: rgb(205, 205, 205);
+    text-decoration: none;
+}
+
+.footer-left a:visited {
+    color: rgb(205, 205, 205);
+    text-decoration: none;
+}
+
+.footer-left a:hover {
+    color: azure;
+    text-decoration: none;
+}
+
+.footer-middle a {
+    color: rgb(205, 205, 205);
+    text-decoration: none;
+}
+
+.footer-middle a:visited {
+    color: rgb(205, 205, 205);
+    text-decoration: none;
+}
+
+.footer-middle a:hover {
+    color: azure;
+    text-decoration: none;
+}
+
+.footer-right a {
+    color: rgb(205, 205, 205);
+    text-decoration: none;
+}
+
+.footer-right a:visited {
+    color: rgb(205, 205, 205);
+    text-decoration: none;
+}
+
+.footer-right a:hover {
+    color: azure;
+    text-decoration: none;
+}
+
+.footer-container h3:hover {
+    color: azure;
+}
+
+.footer-container p {
+    color: rgb(138, 138, 138);
+    margin-top: 10px;
+}
+
+.footer-container p:hover {
+    color: rgb(221, 220, 220);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-left::first-letter {
+    color: #657dff;
+    font-size: 25px;
+}
+
+.footer-middle {
+    padding: 10px;
+}
+
+.footer-right {
+    
+}
+
+.footer-copy-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer-copy-wrapper p {
+    text-align: center;
+    justify-content: center;
+    color: azure;
+}
+
+.footer-line {
+    width: 99%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid rgb(138, 138, 138);
+    height: 0px;
+}
